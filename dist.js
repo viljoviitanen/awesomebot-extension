@@ -1,6 +1,6 @@
 a=message.suffix.split(',')
-sys1=a[0]
-sys2=a[1]
+sys1=a[0].trim()
+sys2=a[1].trim()
 unirest.get('http://www.edsm.net/api-v1/system?sysname='+sys1+'&coords=1')
 .end(function (r1) {
   unirest.get('http://www.edsm.net/api-v1/system?sysname='+sys2+'&coords=1')
