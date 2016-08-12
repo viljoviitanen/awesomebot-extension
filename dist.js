@@ -17,7 +17,7 @@ unirest.get('http://www.edsm.net/api-v1/system?sysname='+encodeURIComponent(sys1
           dy=y1-y2
           dz=z1-z2
           dist=Math.sqrt(dx*dx+dy*dy+dz*dz).toFixed(1)
-          r="Distance between "+sys1+" and "+sys2+" is "+dist+ "ly"
+          r="Distance between "+sys1+" and "+sys2+" is "+dist+" ly"
         }
         else {
           r=sys2+" coordinates not found"
